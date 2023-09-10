@@ -37,10 +37,10 @@ public class VariableScopes {
         System.out.println(bookPrice);
 
     } // email variable end of scope
-    public static void printBookList(String[] books) {
+    public static void printBookList(String[] books) { // books exist through whole method
 
         for (int x = 0; x < books.length; x++) { // x is in the for loop scope
-            String book = books[x];
+            String book = books[x]; // book exists within for loop
 
             // truncate longer book names
             if (book.length() > 50) {
