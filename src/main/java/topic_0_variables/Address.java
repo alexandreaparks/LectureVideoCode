@@ -1,4 +1,4 @@
-package week_0_variables;
+package topic_0_variables;
 
 public class Address {
     public static void main(String[] args) {

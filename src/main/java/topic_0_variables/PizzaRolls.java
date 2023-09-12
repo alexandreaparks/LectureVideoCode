@@ -1,4 +1,4 @@
-package week_0_variables;
+package topic_0_variables;
 
 public class PizzaRolls {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package week_1_if_else;
+package topic_1_if_else;
 
 import static input.InputUtils.intInput;
 
