@@ -28,7 +28,7 @@ public class WhileLoopPassword {
             // if the condition is false, the loop stops and the user got the password correct
             System.out.println("Correct password - access granted!");
 
-            // TODO top secret program here!
+            // top secret program here!
 
         } else {
             System.out.println("Max number of password attempts.");
