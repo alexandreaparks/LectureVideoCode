@@ -5,9 +5,7 @@ import static input.InputUtils.stringInput;
 public class HelloMethods {
 
     // public static - modifiers
-
     // return type must be specified - if no return, use void
-
     // arguments are used when calling methods
     // methods that are called receive the argument as parameters
     // parameters need a type and name, separate with commas if more than one
