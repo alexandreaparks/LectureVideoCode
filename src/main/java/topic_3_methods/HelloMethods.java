@@ -23,7 +23,7 @@ public class HelloMethods {
     } // end of main method
 
     // makeGreeting method
-    // takes one parameter, String n (name variable from main method)
+    // takes one argument as parameter, String n (name variable from main method)
     // creates a new string with "Hello" plus String n plus an exclamation point !
     // then returns the greeting String
 
