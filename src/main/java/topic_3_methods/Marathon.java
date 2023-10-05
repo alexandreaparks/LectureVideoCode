@@ -6,7 +6,7 @@ public class Marathon {
         // define variables
         double currentDistance = 1;
         double marathonDistance = 26.2;
-        double increase = 1.10;
+        double increase = 1.10; // times current distance by this
         int weeks = 1; // create variable for running total of weeks
 
         while (currentDistance < marathonDistance) { // loop until currentDistance greater than marathonDistance

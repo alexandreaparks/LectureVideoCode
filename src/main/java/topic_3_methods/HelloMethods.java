@@ -12,6 +12,7 @@ public class HelloMethods {
     // method body is surrounded with { }
     // return statement is needed if method specifies a return type - returns a variable/value of
     // same type specified in method header
+    //
 
 
     // main method - first code to run
