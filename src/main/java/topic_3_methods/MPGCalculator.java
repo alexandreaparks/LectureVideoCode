@@ -9,15 +9,15 @@ public class MPGCalculator {
         double milesDriven = doubleInput("How many miles did you drive?");
         double gallonsOfGasUsed = doubleInput("How many gallons of gas did you use?");
 
-        // call calculateMPG method to determine MPG and send 2 arguments needed to calculate it
-        double mpg = calculateMPG(milesDriven, gallonsOfGasUsed);
+        // call mpg method to determine MPG and send 2 arguments needed to calculate it
+        double mpg = mpg(milesDriven, gallonsOfGasUsed);
 
         // print mpg
         System.out.println("You got " + mpg + " MPG on your road trip.");
     }
 
     // calculateMPG method takes 2 arguments to use as parameters
-    private static double calculateMPG(double milesDriven, double gallonsOfGasUsed) {
+    public static double mpg(double milesDriven, double gallonsOfGasUsed) {
 
         // calculate mpg
         double mpg = milesDriven / gallonsOfGasUsed;
