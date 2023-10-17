@@ -1,6 +1,7 @@
 package topic_4_lists;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Lists {
@@ -75,7 +76,32 @@ public class Lists {
             System.out.println(s.length());
         }
 
-        // TODO stopped video at 17:37
+        // creating lists
+
+        // ArrayList called cities that only stores Strings
+        List<String> cities = new ArrayList<>();
+
+        // almost all lists will contain data of just one type
+        // - ArrayList of names only contains Strings
+        // - ArrayList of prices only contains Doubles
+
+        // ArrayList for primitive types
+        // Use Object names for the generic type
+        // int = Integer
+        // boolean = Boolean
+        // double = Double
+
+        List<Integer> numbers = new ArrayList<>();
+        List<Boolean> results = new ArrayList<>();
+        List<Double> prices = new ArrayList<>();
+
+        numbers.add(100); // add int value to numbers ArrayList
+
+        int first = numbers.get(0); // read value of index 0
+        System.out.println(first); // prints 100
+
+
+
 
 
     }
