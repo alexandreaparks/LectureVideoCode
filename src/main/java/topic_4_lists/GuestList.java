@@ -9,7 +9,6 @@ import java.util.Collections;
 public class GuestList {
     public static void main(String[] args) {
 
-        //
 
         // Random rnd = new Random();
         // int randomNumber = rnd.nextInt(10); // random number 0-9
