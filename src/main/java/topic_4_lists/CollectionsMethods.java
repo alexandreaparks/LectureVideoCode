@@ -1,0 +1,42 @@
+package topic_4_lists;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CollectionsMethods {
+    public static void main(String[] args) {
+
+        List<String> animals = new ArrayList<>();
+
+        animals.add("Cat");
+        animals.add("Zebra");
+        animals.add("Fish");
+        animals.add("Bird");
+        animals.add("Fish");    // I meant to add "Fish" twice
+
+        System.out.println("Original animals list: " + animals);
+
+        java.util.Collections.sort(animals);      // Sort into order - only if the type of data in the list is sortable
+
+        System.out.println("Sorted animals list: " + animals);
+
+        java.util.Collections.replaceAll(animals, "Fish", "Shark");  // Replace all "Fish" elements with "Shark"
+        System.out.println("Replace \"Fish\" with \"Shark\", now the list is: " + animals);
+
+        java.util.Collections.reverse(animals);   // reverse the order of the list
+        System.out.println("In reverse order: " + animals);
+
+        java.util.Collections.shuffle(animals);   // put elements in random order
+        System.out.println("Shuffled list: " + animals);
+
+        // Display the minimum value = the lowest value = for strings, the first in the alphabet
+        System.out.println("First in the alphabet: " + java.util.Collections.min(animals));
+        // Display the maximum value = the lowest value = for Strings, the last in the alphabet
+        System.out.println("Last in the alphabet: " + java.util.Collections.max(animals));
+
+        Collections.fill(animals, "Koala");   // Fill the entire ArrayList with "Koala"
+        System.out.println("Replaced every element with Koala and now the list is: " + animals);
+
+    }
+}
