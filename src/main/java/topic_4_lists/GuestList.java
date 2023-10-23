@@ -63,8 +63,6 @@ public class GuestList {
         selectPrizeWinner(guestList);
 
 
-
-
     }
 
     private static void selectPrizeWinner(List<String> guests) {
