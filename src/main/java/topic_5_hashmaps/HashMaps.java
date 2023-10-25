@@ -1,6 +1,7 @@
 package topic_5_hashmaps;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMaps {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class HashMaps {
         // can delete a key-value pair
         // can loop over all the keys, value, or both
 
-        HashMap<Integer, String> myCats = new HashMap<>();
+        Map<Integer, String> myCats = new HashMap<>();
         myCats.put(1, "Stella");
         myCats.put(2, "Riley");
         myCats.put(3, "August Pepper");
