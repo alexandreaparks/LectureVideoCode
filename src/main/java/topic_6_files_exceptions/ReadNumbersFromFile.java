@@ -28,5 +28,6 @@ public class ReadNumbersFromFile {
         }
 
         System.out.println(numbers);
+        reader.close();
     }
 }
