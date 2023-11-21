@@ -55,5 +55,7 @@ public class WriteArrayList {
         System.out.println("End of file reached!");
         System.out.println(classDescriptions);
 
+        bufferedReader.close();
+
     }
 }
