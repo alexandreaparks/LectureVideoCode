@@ -16,6 +16,10 @@ public class HelloWriting {
         FileWriter writer = new FileWriter("hello.txt");
         BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
+        // can also use:
+
+        // BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("hello.txt"));
+
         bufferedWriter.write("Hello!\n"); // add newline so the next line you write is on a newline
         bufferedWriter.write("More data here");
         bufferedWriter.newLine(); // adds newline to file rather than using \n

@@ -30,13 +30,6 @@ public class WritingToFilesIntro {
         * File I/O is slow - around 1000 times slower than reading/writing to memory
         * BufferedWriter class wraps FileWriter and handles I/O in background of the program
         * This way, memory-based operations can continue while the file is being used
-        *
-        *
-        *
-        *
-        *
-        *
-        *
         */
     }
 }
