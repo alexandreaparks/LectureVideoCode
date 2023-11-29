@@ -1,4 +1,4 @@
-package topic_7_object_oriented_programming;
+package topic_7_object_oriented_programming.Pool;
 
 public class Pool {
     // this is a class definition

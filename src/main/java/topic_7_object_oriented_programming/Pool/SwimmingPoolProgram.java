@@ -1,4 +1,6 @@
-package topic_7_object_oriented_programming;
+package topic_7_object_oriented_programming.Pool;
+
+import topic_7_object_oriented_programming.Pool.Pool;
 
 public class SwimmingPoolProgram {
 
