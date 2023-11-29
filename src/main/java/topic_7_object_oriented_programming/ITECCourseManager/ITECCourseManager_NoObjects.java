@@ -1,7 +1,5 @@
 package topic_7_object_oriented_programming.ITECCourseManager;
 
-import java.util.ArrayList;
-
 public class ITECCourseManager_NoObjects {
     public static void main(String[] args) {
 
