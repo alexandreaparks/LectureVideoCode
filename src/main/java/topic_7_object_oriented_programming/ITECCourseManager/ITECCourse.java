@@ -21,7 +21,11 @@ public class ITECCourse {
 
     // method to add a new student
     void addStudent(String studentName) {
-        students.add(studentName);
+        if (students.size() == maxStudents) {
+            System.out.println("Course is full! Can't add " + studentName);
+        } else {
+            students.add(studentName);
+        }
     }
 
     // method to print all info about a ITECCourse object
@@ -43,4 +47,15 @@ public class ITECCourse {
         return students.size();
 
     }
+
+    void removeStudent(String studentName) {
+        if (students.contains(studentName)) {
+            students.remove(studentName);
+            System.out.println(studentName + " was un-enrolled from " + name);
+        } else {
+            System.out.println(studentName + " was not found in " + name);
+        }
+    }
+
+
 }

@@ -43,8 +43,36 @@ public class OOPIntro {
           not having to worry about the detail to use the code
         * Single responsibility principle - focusing each class on one task
 
+        Defining a class:
+        Use keyword class plus name of class
+        Start class name with an uppercase letter
+        Write each class definition in its own file
+        The file name must match the class name
+        Can write several class definitions in the same file, or different files
 
+        Constructors:
+        Special method that's called when an object is created
+        Must be the same name as the class
+        Used to set up and initialize an object
+        A default constructor is always automatically called when an object is created,
+        whether you create a constructor method or not
+        Constructors don't have any return type
 
+        Overloading methods and constructors:
+        Can't have two variables in the same scope with the same name
+        But can do it with methods and constructors - only do it for
+        methods which do the same kind of thing or else it's confusing
+        Two methods can have the same name ONLY IF they have different arguments
+        Compiler will look at arguments used when you call the method to figure out
+        which method or constructor was meant to be called
+
+        Programs should always be designed with change in mind
+        You'll have to add new features, or requirements change, or find a bug, or
+        want to use some of the code in another program
+        If OOP is used well, makes it easier to write a modular program that can
+        be re-used
+        Objects help with breaking code into independent modules
+        Easier to change parts of a program without breaking other parts
 
 
          */
