@@ -7,7 +7,7 @@ public class ITECCourseManager {
                 1310, 20);
 
 
-        //Add some students  TODO check that we have not exceeded the max number for the class
+        //Add some students
         maintenanceCourse.addStudent("Anna");
         maintenanceCourse.addStudent("Bill");
         maintenanceCourse.addStudent("Carl");
