@@ -34,13 +34,13 @@ public class ITECCourseManager {
         softwareDevelopmentProjects.addStudent("Izzy");
 
         int totalEnrolled = softwareDevelopmentProjects.getNumberOfStudents();
-        System.out.println("The " + softwareDevelopmentProjects.name +
+        System.out.println("The " + softwareDevelopmentProjects.getName() +
                 " class has " + totalEnrolled + " students.");
-        System.out.println("ITEC " + softwareDevelopmentProjects.code + " " +
-                softwareDevelopmentProjects.name);
+        System.out.println("ITEC " + softwareDevelopmentProjects.getCode() + " " +
+                softwareDevelopmentProjects.getName());
 
         // change object details
-        softwareDevelopmentProjects.maxStudents = 30;
+        softwareDevelopmentProjects.setMaxStudents(-30);
         softwareDevelopmentProjects.writeCourseInfo();
 
         ITECCourse smallCourse = new ITECCourse("Fake course", 1234,
@@ -50,8 +50,6 @@ public class ITECCourseManager {
         smallCourse.addStudent("Miriam");
         smallCourse.removeStudent("Kirby");
         smallCourse.addStudent("Nita");
-
-
 
         smallCourse.writeCourseInfo();
     }

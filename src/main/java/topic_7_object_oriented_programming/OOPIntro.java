@@ -74,6 +74,42 @@ public class OOPIntro {
         Objects help with breaking code into independent modules
         Easier to change parts of a program without breaking other parts
 
+        Encapsulation:
+        A well-designed object hides how it works internally
+        Only shares necessary data
+        Should have well-designed set of methods which other code can use to
+        work with this object
+        Why?
+        * Facilitates re-use - if there is a well-defined and documented interface,
+        it's easier to use that object
+        * You know what the publicly accessible parts of the objects are - so you know
+        what is okay to change and what will affect other parts of your code
+        * Helps prevent accidentally modifying an object's data (makes it harder to do this)
+
+        Public, Protected, Private:
+        Usually make all instance variables private
+        Make methods that will be used by other classes in the same package protected
+        Make methods that any other class can use public
+        Final (constant) variables can be public, protected, or private (as appropriate)
+
+        Public: any other class can access this method or variable
+        Protected: other classes in the same package can access this method or variable
+        (also subclasses, later class)
+        Private: only this object can access this private variable/method
+        No other objects can access this method or variable
+
+        If no access modifier is specified, package-protected is assumed (like protected;
+        available in same package, but subclasses in a different package can't access it)
+
+        Access Modifiers:
+        Use the most restrictive access modifier possible
+        Protected: useful because often public enables too much access/private is too restrictive
+        Package: a directory containing Java code. Classes describe the package it belongs to on first line
+
+
+
+
+
 
          */
     }

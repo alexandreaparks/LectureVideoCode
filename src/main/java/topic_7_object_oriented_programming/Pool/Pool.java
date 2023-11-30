@@ -10,7 +10,45 @@ public class Pool {
     private String address;
     private double maxDepth;
 
-    Pool(String name, double length) { // constructor method // same name as class
+    // get and set
+    // alt insert keyboard shortcut
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        if (length < 0 || length > 1000) {
+            return;
+        }
+        this.length = length;
+
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public double getMaxDepth() {
+        return maxDepth;
+    }
+
+    public void setMaxDepth(double maxDepth) {
+        this.maxDepth = maxDepth;
+    }
+
+    public Pool(String name, double length) { // constructor method // same name as class
         // used for setting up and initializing an object
         this.name = name;
         this.length = length;
