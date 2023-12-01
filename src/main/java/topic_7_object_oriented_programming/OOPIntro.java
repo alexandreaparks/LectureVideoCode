@@ -106,6 +106,26 @@ public class OOPIntro {
         Protected: useful because often public enables too much access/private is too restrictive
         Package: a directory containing Java code. Classes describe the package it belongs to on first line
 
+        Accessor and Mutator methods:
+        Used to get and set object instance variables
+        Usually called getters and setters
+        Right-click on class, select generate
+        OR Alt + Insert
+        Then select Getter and Setter
+
+        "this" keyword:
+        Java keyword that refers to the object the code is running for
+        Can be used to remove ambiguity between instance variables
+        this is required if there is ambiguity in variable names, such as
+        with class variables and method/constructor arguments
+        Example:
+
+        public void setMaxStudents (int maxStudents) {
+            this.maxStudents = maxStudents;
+        }
+
+        this is not required if there is no ambiguity in variable names
+
 
 
 
