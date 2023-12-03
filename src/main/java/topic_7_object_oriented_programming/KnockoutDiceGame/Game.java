@@ -68,10 +68,51 @@ public class Game {
     }
 
     private void play() {
-        // TODO
+
+        int playerIndex = 0;
+        int totalPlayers = players.size();
+
+        while (moreThanOnePlayerInPlay()) {
+
+            Player currentPlayer = players.get(playerIndex);
+
+            if (currentPlayer.isKnockedOut()) {
+                System.out.println("Sorry " + currentPlayer.getName() + ", you are knocked out.");
+            } else {
+                stringInput("Player " + currentPlayer.getName() + ", press enter to roll.");
+                String turnResult = currentPlayer.playTurn(diceCup);
+                System.out.println(turnResult);
+            }
+
+            playerIndex = (playerIndex + 1) % totalPlayers;
+        }
+    }
+
+    private boolean moreThanOnePlayerInPlay() {
+
+        int totalInPlay = 0;
+        for (Player p: players) {
+            if (!p.isKnockedOut()) {
+                totalInPlay++;
+            }
+        }
+
+        System.out.println("There are " + totalInPlay + " player(s) in the game.");
+        if (totalInPlay > 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     private void printWinner() {
-        // TODO
+
+        for (Player player: players) {
+            if (player.isKnockedOut()) {
+                System.out.println("Player " + player.getName() + " was knocked out.");
+            } else {
+                System.out.println("Player " + player.getName() + " IS THE WINNER!!!");
+            }
+        }
     }
 }

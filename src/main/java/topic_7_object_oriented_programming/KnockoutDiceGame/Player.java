@@ -11,6 +11,31 @@ public class Player {
         this.knockedOut = false;
     }
 
+    public String playTurn(DiceCup diceCup) {
+        int score = diceCup.rollAll();
+        if (playerKnockedOut(score)) {
+            knockedOut = true;
+        }
+
+        String knockedOutOrNot = "was not";
+        if (knockedOut) {
+            knockedOutOrNot = "was";
+        }
+        String resultTemplate = "Player %s rolled a total of %d and %s knocked out. (Your knockout number was %d)";
+
+        String result = String.format(resultTemplate, getName(), score, knockedOutOrNot, getKnockoutNumber());
+
+        return result;
+    }
+
+    public boolean playerKnockedOut(int score) {
+        if (score == knockoutNumber) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public String getName() {
         return name;
     }
@@ -34,4 +59,6 @@ public class Player {
     public void setKnockoutNumber(int knockoutNumber) {
         this.knockoutNumber = knockoutNumber;
     }
+
+
 }
